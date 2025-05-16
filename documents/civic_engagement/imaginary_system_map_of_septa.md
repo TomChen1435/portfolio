@@ -1,0 +1,71 @@
+# Imaginary System Map of SEPTA
+
+## List of Service
+
+- Metro
+    - L/Market-Frankford Elevated/Blue
+        - L/69th TC/Bustleton
+    - B/Broad Street Subway/Orange
+        - B1/Stadiums/Fern Rock TC/Local
+        - B2/Stadiums/Fern Rock TC/Express
+        - B3/Quartermaster Plz/Fern Rock TC/Local
+        - B4/Stadiums/Neshaminy Falls/Express
+        - B5/Quartermaster Plz/Strawberry Mansion/Local
+    - T/Subway-Surface Trolleys/Green
+        - T1/Lancaster/Overbrook
+        - T2/Baltimore/Fernwood-Yeadon
+        - T3/Chester/Darby TC
+        - T4/Woodland/Darby TC
+        - T5/Elmwood/Eastwick
+    - G/Girard Avenue LRT/Yellow
+        - G1/69th TC/Westmoreland
+        - G21/Girard/40th/Spring Garden/25th/Oregon/Delaware
+        - G22/Loop Clockwise
+    - D/Suburban Trolleys/Pink
+        - D1/Media
+        - D2/Sharon Hill
+    - M/Norristown High Speed Trolley/Purple
+        - M1/Norristown/Local
+        - M2/Radnor/Limited
+    - P/Lindonwold Line/Red
+        - P/Strawberry Mansion/Lindonwold
+    - V/South Jersey LRT/Teal
+        - V11/Riverfront/Trenton TC/Limited
+        - V12/Riverfront/Trenton Airport/Local
+        - V2/Riverfront/Glassboro/Local
+    - H/Chestnut Hill LRT/Brown
+        - H1/Chestnut Hill Loop
+        - H2/Loop Clockwise
+- Regional Rail
+    - A/Airport
+    - C/Atlantic City
+        - C1/Philadelphia
+        - C2/Pennsauken TC
+        - C3/Lindenwold
+    - R1/Trenton
+        - R11/Trenton TC
+        - R12/New Brunswick
+    - R2/Wilmington
+        - R21/Chester TC
+        - R22X/Newark
+    - R3/West Chester
+        - R31/Media
+        - R32/West Chester
+    - R4/Lancaster
+        - R41/Exton
+        - R42X/Lancaster
+    - R5/Allentown
+        - R51/Lansdale
+        - R52/Doylestown
+        - R53X/Allentown
+    - R6/Reading
+        - R61/Norristown
+        - R62/Lansdale via Stony Creek
+        - R63X/Reading
+    - R7/New Hope
+        - R71/Warminster
+        - R72X/New Hope
+    - R8/West Trenton
+        - R81/West Trenton
+        - R82X/Bound Brook
+    - R9/Newtown
