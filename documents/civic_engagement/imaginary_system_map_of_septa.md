@@ -8,9 +8,8 @@
     - B/Broad Street Subway/Orange
         - B1/Stadiums/Fern Rock TC/Local
         - B2/Stadiums/Fern Rock TC/Express
-        - B3/Quartermaster Plz/Fern Rock TC/Local
+        - B3/8th/Fern Rock TC/Express
         - B4/Stadiums/Neshaminy Falls/Express
-        - B5/Quartermaster Plz/Strawberry Mansion/Local
     - T/Subway-Surface Trolleys/Green
         - T1/Lancaster/Overbrook
         - T2/Baltimore/Fernwood-Yeadon
@@ -19,23 +18,21 @@
         - T5/Elmwood/Eastwick
     - G/Girard Avenue LRT/Yellow
         - G1/69th TC/Westmoreland
-        - G21/Girard/40th/Spring Garden/25th/Oregon/Delaware
-        - G22/Loop Clockwise
-    - D/Suburban Trolleys/Pink
+        - G2/Old Freight Loop
+    - D/Suburban Trolleys/Magenta
         - D1/Media
         - D2/Sharon Hill
     - M/Norristown High Speed Trolley/Purple
-        - M1/Norristown/Local
-        - M2/Radnor/Limited
+        - M1/KOP Road/Limited
+        - M2/Norristown/Local
     - P/Lindonwold Line/Red
         - P/Strawberry Mansion/Lindonwold
     - V/South Jersey LRT/Teal
-        - V11/Riverfront/Trenton TC/Limited
-        - V12/Riverfront/Trenton Airport/Local
-        - V2/Riverfront/Glassboro/Local
+        - V11/Trenton TC/Limited
+        - V12/Trenton Airport/Local
+        - V2/Glassboro/Local
     - H/Chestnut Hill LRT/Brown
-        - H1/Chestnut Hill Loop
-        - H2/Loop Clockwise
+        - H/Chestnut Hill Loop
 - Regional Rail
     - A/Airport
     - C/Atlantic City
@@ -44,28 +41,37 @@
         - C3/Lindenwold
     - R1/Trenton
         - R11/Trenton TC
-        - R12/New Brunswick
+        - R12/Newark, NJ
     - R2/Wilmington
         - R21/Chester TC
-        - R22X/Newark
-    - R3/West Chester
-        - R31/Media
-        - R32/West Chester
-    - R4/Lancaster
-        - R41/Exton
-        - R42X/Lancaster
-    - R5/Allentown
-        - R51/Lansdale
-        - R52/Doylestown
+        - R22X/Newark, DE
+    - R3/Lancaster
+        - R31/Exton
+        - R32X/Lancaster
+    - S/Intercity Local
+        - S12/Trenton TC/Chester TC
+        - S13/Trenton TC/Exton/Bypassing Center City
+        - S23/Chester TC/Exton
+    - R4/West Chester
+        - R41/Media
+        - R42/West Chester
+    - R5/Allentown & Reading
+        - R51A/Lansdale via Jenkintown
+        - R51B/Lansdale via Norristown
+        - R52A/Doylestown via Jenkintown
+        - R52B/Doylestown via Norristown
+        - R52L/Doylestown/Lansdale
         - R53X/Allentown
-    - R6/Reading
-        - R61/Norristown
-        - R62/Lansdale via Stony Creek
-        - R63X/Reading
-    - R7/New Hope
-        - R71/Warminster
-        - R72X/New Hope
-    - R8/West Trenton
-        - R81/West Trenton
-        - R82X/Bound Brook
-    - R9/Newtown
+        - R53L/Allentown/Lansdale
+        - R54X/Reading
+    - R6/New Hope
+        - R61/Warminster
+        - R62X/New Hope
+        - R62L/New Hope/Glenside
+    - R7/West Trenton & Newtown
+        - R71A/West Trenton via Jenkintown
+        - R71B/West Trenton via Fox Chase
+        - R72A/Newtown via Jenkintown
+        - R72B/Newtown via Fox Chase
+        - R73X/Bound Brook
+        - R73L/Bound Brook/Neshaminy Falls
