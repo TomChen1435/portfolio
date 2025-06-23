@@ -58,7 +58,7 @@ header {
     padding: 0 1.5rem;
 }
 
-header > section {
+a#header-title, section#header-btns {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
@@ -66,22 +66,17 @@ header > section {
 
 /* Title */
 
-section#header-title {
+a#header-title {
     gap: 1rem;
+    text-decoration: none;
 }
 
 img.icon {
-    border: none;
     height: 2.5rem;
     border-radius: 0.75rem;
 }
 
-img.icon:hover {
-    border: 0.125rem solid var(--textOnDark);
-    transition-property: border;
-}
-
-section#header-title > h1 {
+a#header-title > h1 {
     color: var(--textOnDark);
     font-size: 2rem;
     font-weight: 400;
@@ -104,10 +99,11 @@ a.header-btns {
     padding-right: 1rem;
 }
 
-/* Header button designs */
+/* Header button colors */
 
-.header-btns:hover {
+a.header-btns:not(.disabled):hover {
     color: var(--textOnLight);
+    cursor: pointer;
     transition-property: background-color color;
 }
 
@@ -123,7 +119,7 @@ a.header-btn-3:hover {
     background-color: var(--mint);
 }
 
-.header-btns:active {
+a.header-btns:not(.disabled):active {
     color: var(--textOnDark);
     transition-property: background-color color;
 }

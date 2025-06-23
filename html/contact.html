@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Chen's Portfolio</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <a id="header-title" href="../index.html">
+            <img src="../media/header/icon.jpeg" alt="icon" class="icon">
+            <h1>Tom Chen's Portfolio</h1>
+        </a>
+        <section id="header-btns">
+            <a id="header-blog" class="header-btns header-btn-1">Blog</a>
+            <a id="header-resume" class="header-btns header-btn-2">Résumé</a>
+            <a id="header-contact" class="header-btns disabled">Contact</a>
+            <style>
+                a#header-contact {
+                    background-color: var(--mint);
+                    color: var(--textOnLight);
+                    cursor: not-allowed;
+                    transition: none;
+                }
+            </style>
+        </section>
+    </header>
+
+</body>
+</html>
