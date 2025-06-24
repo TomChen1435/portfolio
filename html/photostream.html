@@ -15,8 +15,16 @@
             <h1>Tom Chen's Photo Gallery</h1>
         </a>
         <section id="header-btns">
-            <a id="header-portfolio" class="header-btns header-btn-1" href="photostream.html">Photostream</a>
-            <a id="header-photostream" class="header-btns header-btn-2" href="../index.html">Portfolio</a>
+            <a id="header-photostream" class="header-btns disabled">Photostream</a>
+            <style>
+                a#header-photostream {
+                    background-color: var(--yellow);
+                    color: var(--textOnLight);
+                    cursor: not-allowed;
+                    transition: none;
+                }
+            </style>
+            <a id="header-portfolio" class="header-btns header-btn-2" href="../index.html">Portfolio</a>
             <a id="header-contact" class="header-btns header-btn-3" href="contact.html">Contact</a>
         </section>
     </header>
