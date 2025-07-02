@@ -56,9 +56,10 @@ header {
     height: 4rem;
     justify-content: space-between;
     padding: 0 1.5rem;
+    position: sticky;
 }
 
-a#header-title, section#header-btns {
+a#header-title, nav {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
@@ -134,4 +135,12 @@ a.header-btn-2:active {
 
 a.header-btn-3:active {
     background-color: var(--orange);
+}
+
+/* Disabled buttons in the header */
+
+a.header-btns.disabled {
+    color: var(--textOnLight);
+    cursor: not-allowed;
+    transition: none;
 }
