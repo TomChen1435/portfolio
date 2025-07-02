@@ -10,6 +10,6 @@
         - Writings
     - [Résumé](html/resume.html)
     - [Contact](html/contact.html)
-    - Project 1: New Jersey Transit mobile app flow
+    - Project 1: New Jersey Transit mobile app flow redesign
     - Project 2: Local restaurant responsive mock website
     - Project 3: Transit Zodiac
