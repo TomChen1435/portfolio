@@ -1,6 +1,184 @@
 @import url('./reset.css');
 
 @import url('./ibm-color.css');
-@import url('./apple-hyperlink.css');
+@import url('./clickables.css');
 
+* {box-sizing: border-box;}
 .hide {display: none;}
+
+/* Grayscale */
+
+:root {
+    /* As the intensity parameter gets larger, the contrast between "black" and "white" get smaller */
+    --intensityL: 5;
+
+    --baseL: calc(var(--intensityL) / 100);
+    --baseLi: calc(1 - var(--baseL));
+
+    --black: oklab(var(--baseL) 0 0);
+    --white: oklab(var(--baseLi) 0 0);
+}
+
+@media (prefers-color-scheme: light) {
+    /* All texts are white */
+    * {color: var(--white);}
+
+    /* The background, which will pass onto the header and the footer, both with transparent background, is white */
+    body {background-color: var(--white);}
+
+    /* The headings inside the header and the footer need to be black to form contrast against the white background */
+    .alt-color, .alt-color * {color: var(--black);}
+}
+
+@media (prefers-color-scheme: dark) {
+    * {color: var(--black);}
+    body {background-color: var(--black);}
+    .alt-color, .alt-color * {color: var(--white);}
+}
+
+/* To maintain the contrast against the background color of the pages: 
+
+In light mode: 
+1) Normal buttons: black glyphs + orange background;
+2) Hover buttons: black glyphs + yellow background; 
+3) Active buttons: yellow glyphs + black background; 
+
+In dark mode: 
+1) Normal buttons: black glyphs + yellow background;
+2) Hover buttons: black glyphs + orange background; 
+3) Active buttons: orange glyphs + white background. */
+
+@media (prefers-color-scheme: light) {
+    .btn, button {background-color: var(--apple-orange);}
+    .btn > *, button > * {
+        color: var(--black);
+        fill: var(--black);
+    }
+
+    .btn:hover, button:hover {background-color: var(--apple-yellow);}
+
+    .btn:active, button:active {background-color: var(--black);}
+    .btn:active > *, button:active > * {
+        color: var(--apple-yellow);
+        fill: var(--apple-yellow);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .btn, button {background-color: var(--apple-yellow);}
+    .btn > *, button > * {
+        color: var(--black);
+        fill: var(--black);
+    }
+
+    .btn:hover, button:hover {background-color: var(--apple-orange);}
+
+    .btn:active, button:active {background-color: var(--white);}
+    .btn:active > *, button:active > * {
+        color: var(--apple-orange);
+        fill: var(--apple-orange);
+    }
+}
+
+/* Structure starts here */
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+
+    --gap: 0.75rem;
+
+    --corner: 0.75rem;
+
+    --favicon-ht: 2.5rem;
+
+    --icon-ht: 2rem;
+    --btn-ht: calc(var(--icon-ht) + var(--gap));
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 550;
+}
+
+/* Buttons */
+
+.btn, button {
+    align-items: center;
+    border-radius: var(--corner);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--gap);
+    height: var(--btn-ht);
+    justify-content: space-between;
+    padding: calc(var(--gap) / 2) var(--gap);
+}
+
+.btn > svg, button > svg {
+    height: var(--icon-ht);
+}
+
+.btn > p, button > p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Header */
+
+.favicon {
+    border-radius: var(--corner);
+    height: var(--favicon-ht);
+}
+
+header > .title {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--gap);
+    justify-content: flex-start;
+    margin: var(--gap);
+}
+
+/* When vw < 336px, cut the second half of the title */
+@media (width < 21rem) {
+    header span.portfolio {display: none;}
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--gap);
+    padding: var(--gap);
+}
+
+/* When vw >= 1064px, there is no need to expand to a 4-column layout. Instead, all content should move to the right */
+@media (66.5rem <= width) {
+    footer {align-items: flex-end;}
+}
+
+footer > h1, footer > p.copyright {
+    margin: calc(var(--gap) / 3) var(--gap);
+}
+
+footer > .links {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr;
+    max-width: 65rem;
+}
+
+/* The minimal width of a button in the footer is 256px */
+
+/* When vw >= 548px, switch to a 2-column layout */
+@media (34.25rem <= width) {
+    footer > .links {grid-template-columns: repeat(2, 1fr);}
+}
+
+/* When vw >= 816px, switch to a 3-column layout */
+@media (51rem <= width) {
+    footer > .links {grid-template-columns: repeat(3, 1fr);}
+}
+
+/* Discord does not support outreach links for direct messaging */
+.btn.discord {cursor: not-allowed;}
