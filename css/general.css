@@ -101,6 +101,13 @@ h1 {
     font-weight: 550;
 }
 
+h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+p, li {line-height: 145%;}
+
 /* Buttons */
 
 .btn, button {
@@ -130,6 +137,8 @@ h1 {
     height: var(--favicon-ht);
 }
 
+header h1 {margin: 0;}
+
 header > .title {
     align-items: center;
     display: flex;
@@ -158,8 +167,8 @@ footer {
     footer {align-items: flex-end;}
 }
 
-footer > h1, footer > p.copyright {
-    margin: calc(var(--gap) / 3) var(--gap);
+h1, h2, footer > p.copyright {
+    margin: 0 var(--gap);
 }
 
 footer > .links {
@@ -183,3 +192,26 @@ footer > .links {
 
 /* Discord does not support outreach links for direct messaging */
 .btn.discord {cursor: not-allowed;}
+
+main {
+    margin: var(--gap) 0;
+}
+
+.hero {
+    background-color: var(--green1);
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr;
+    padding: var(--gap);
+}
+
+.hero > .links {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--gap);
+}
+
+.hero > .links > .btn {
+    max-width: 18.5rem;
+    min-width: 14rem;
+}
