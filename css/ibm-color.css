@@ -1,0 +1,86 @@
+/* IBM Design Language - Colors */
+
+:root {
+    --ibm-green-20: #a7f0ba;
+    --ibm-green-40: #42be65;
+    --ibm-green-50: #24a148;
+    --ibm-green-60: #198030;
+    --ibm-green-70: #0e6027;
+    --ibm-green-90: #022d0d;
+
+    --ibm-teal-20: #9ef0f0;
+    --ibm-teal-40: #08bdba;
+    --ibm-teal-50: #009d9a;
+    --ibm-teal-60: #007d79;
+    --ibm-teal-70: #005d5d;
+    --ibm-teal-90: #022b30;
+
+    --ibm-blue-20: #d0e2ff;
+    --ibm-blue-40: #78a9ff;
+    --ibm-blue-50: #4589ff;
+    --ibm-blue-60: #0f62fe;
+    --ibm-blue-70: #0043ce;
+    --ibm-blue-90: #001d6c;
+
+    --ibm-purple-20: #e8daff;
+    --ibm-purple-40: #be95ff;
+    --ibm-purple-50: #a56eff;
+    --ibm-purple-60: #8a3ffc;
+    --ibm-purple-70: #6929c4;
+    --ibm-purple-90: #31135e;
+
+    --ibm-magenta-20: #ffd6e8;
+    --ibm-magenta-40: #ff7eb6;
+    --ibm-magenta-50: #ee5396;
+    --ibm-magenta-60: #d02670;
+    --ibm-magenta-70: #9f1853;
+    --ibm-magenta-90: #510224;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --green0: var(--ibm-green-60);
+        --green1: var(--ibm-green-70);
+        --green2: var(--ibm-green-90);
+
+        --teal0: var(--ibm-teal-60);
+        --teal1: var(--ibm-teal-70);
+        --teal2: var(--ibm-teal-90);
+
+        --blue0: var(--ibm-blue-60);
+        --blue1: var(--ibm-blue-70);
+        --blue2: var(--ibm-blue-90);
+
+        --purple0: var(--ibm-purple-60);
+        --purple1: var(--ibm-purple-70);
+        --purple2: var(--ibm-purple-90);
+
+        --magenta0: var(--ibm-magenta-60);
+        --magenta1: var(--ibm-magenta-70);
+        --magenta2: var(--ibm-magenta-90);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --green0: var(--ibm-green-50);
+        --green1: var(--ibm-green-40);
+        --green2: var(--ibm-green-20);
+
+        --teal0: var(--ibm-teal-50);
+        --teal1: var(--ibm-teal-40);
+        --teal2: var(--ibm-teal-20);
+
+        --blue0: var(--ibm-blue-50);
+        --blue1: var(--ibm-blue-40);
+        --blue2: var(--ibm-blue-20);
+
+        --purple0: var(--ibm-purple-50);
+        --purple1: var(--ibm-purple-40);
+        --purple2: var(--ibm-purple-20);
+
+        --magenta0: var(--ibm-magenta-50);
+        --magenta1: var(--ibm-magenta-40);
+        --magenta2: var(--ibm-magenta-20);
+    }
+}
