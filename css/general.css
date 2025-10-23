@@ -3,6 +3,7 @@
 @import url('./ibm-color.css');
 @import url('./clickables.css');
 
+html {scroll-behavior: smooth;}
 * {box-sizing: border-box;}
 .hide {display: none;}
 
