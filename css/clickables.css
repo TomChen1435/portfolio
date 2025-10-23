@@ -1,7 +1,7 @@
-/* Hyperlinks */
-
 @media (prefers-color-scheme: light) {
     :root {
+        --apple-orange: rgb(255,141,40);
+        --apple-yellow: rgb(255,204,0);
         --apple-blue: rgb(0,136,255);
         --apple-indigo: rgb(97,85,245);
         --apple-purple: rgb(203,48,224);
@@ -11,6 +11,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --apple-orange: rgb(255,146,48);
+        --apple-yellow: rgb(255,214,0);
         --apple-blue: rgb(0,145,255);
         --apple-indigo: rgb(107,93,255);
         --apple-purple: rgb(219,52,242);
@@ -18,7 +20,16 @@
     }
 }
 
-a.hyperlink {
+a, button {
+    cursor: pointer;
+    transition: all 125ms ease-in-out; 
+}
+
+.hyperlink {
     color: var(--apple-blue);
     text-decoration: underline;
+}
+
+.btn, button {
+    text-decoration: none;
 }
