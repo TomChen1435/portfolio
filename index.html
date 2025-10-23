@@ -10,44 +10,51 @@
 <body>
 
     <header>
-        <section class="title">
+        <a href="/index.html" class="title">
             <img src="/images/favicon.jpeg" alt="Icon" class="favicon">
             
             <h1 class="alt-color">Tom Chen<span class="portfolio">'s Portfolio</span></h1>
-        </section>
+        </a>
     </header>
 
     <main class="home hide">
         <section class="hero">
             <picture class="portrait"></picture>
-            <section class="introduction"></section>
-            <section class="links"></section>
+
+            <section class="introduction">
+                <p class="note">Bringing beautiful designs to life through accessibility and code. <br>Design with code, and code with design.</p>
+                <!-- Use JS to form greetings with the visitor's local time -->
+                <h1 class="greeting"></h1>
+
+            </section>
+
+            <section class="links">
+                <a href="/html/resume.html" class="btn resume">
+                    <p>My Resume</p>
+                </a>
+
+                <a href="#about" class="btn about">
+                    <p>More about Me</p>
+                </a>
+
+                <a href="#contact-info" class="btn contact-info">
+                    <p>Contact Info</p>
+                </a>
+            </section>
         </section>
 
         <section class="spotlight">
+            <h1></h1>
             <section class="project1"></section>
             <section class="project2"></section>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <article></article>
         </section>
     </main>
 
-    <main class="resume hide">
-        <section class="title">
-            <h1>Resume</h1>
-            <button class="download">
-
-            </button>
-        </section>
-
-        <section class="resume">
-
-        </section>
-    </main>
-
-    <footer>
+    <footer id="contact-info">
         <h1 class="alt-color">Let's Keep in Touch!</h1>
 
         <section class="links">
