@@ -30,6 +30,11 @@ a, button {
     text-decoration: underline;
 }
 
+.hyperlink:hover {color: var(--apple-indigo);}
+.hyperlink:active {color: var(--apple-pink);}
+.hyperlink:visited {color: var(--apple-purple);}
+
 .btn, button {
+    border: none;
     text-decoration: none;
 }
