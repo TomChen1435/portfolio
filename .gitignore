@@ -23,5 +23,7 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # Files
+src/lib/svelte_cheatsheets
+static/cheatsheets
 static/collections
 static/projects
