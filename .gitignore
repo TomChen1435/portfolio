@@ -1,2 +1,9 @@
 # System
 .DS_Store
+
+# Private files
+toolbox/
+
+# Large files
+*.pdf
+**/unoptimized_images/
