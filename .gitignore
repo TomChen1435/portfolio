@@ -4,6 +4,9 @@
 # Private files
 toolbox/
 
+# Sample file
+sample.*
+
 # Large files
 *.pdf
 **/unoptimized_images/

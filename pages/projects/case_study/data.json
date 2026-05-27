@@ -1,0 +1,285 @@
+[
+    {
+        "id": "idm216",
+        "title": "Mobile Ordering App for a Campus Food Truck",
+        "subtitle": "KC's Fresh Fruit and Smoothies",
+        "content": [
+            {
+                "title": "Overview",
+                "content": [
+                    "KC's Fresh Fruit and Smoothies is a mobile-first web app built to streamline the ordering experience at an on-campus food truck. The project began with a design foundation inherited from a prior term and tasked the team with translating those designs into a fully functional, coded product within a single quarter.",
+                    "The core challenge was building a reliable end-to-end ordering flow — one that would hold up even under unexpected or careless user input. Rather than a feature-rich ordering system, the team deliberately scoped the work to a single, well-tested critical path: from browsing the menu to placing an order, without a single point of failure.",
+                    "The result is a working web app that meets its primary success criterion: a robust ordering flow that doesn't break under reckless use. The project reinforced the value of building a minimal but stable logic layer before layering in front-end complexity."
+                ]
+            },
+            {
+                "title": "Context and challenge",
+                "content": [
+                    {
+                        "title": "Background",
+                        "content": [
+                            "KC's Fresh Fruit and Smoothies is a campus food truck serving fresh fruit cups and smoothies to students. As a high-traffic, time-sensitive service, the truck faced a recurring operational problem: managing orders efficiently during peak hours while maintaining a smooth experience for both customers and staff.",
+                            "This project was the second term of a two-part effort. The first term produced the UX research, user testing, and visual designs. This term's mandate was to take those assets and build the actual product — a 10-week sprint focused entirely on implementation."
+                        ]
+                    },
+                    {
+                        "title": "The Problem",
+                        "content": [
+                            "Without a digital ordering system, customers at the truck faced long wait times and staff had no reliable way to manage order queues. The project existed to solve this with a lightweight mobile web app that any customer could use without instruction — on their own device, in line, in a hurry."
+                        ]
+                    },
+                    {
+                        "title": "Goals and objectives",
+                        "list": "unordered",
+                        "content": [
+                            "Deliver a fully functional web app implementing a single, complete ordering critical path.",
+                            "Ensure the ordering flow does not break under reckless or unexpected user input.",
+                            "Faithfully translate the inherited UI designs into a coded front-end.",
+                            "Maintain clean, organized file structure and naming conventions throughout development."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Process and insight",
+                "content": [
+                    {
+                        "title": "My role on the team",
+                        "content": [
+                            "As primary developer, I was responsible for building the PHP application logic and integrating it into the front-end. As secondary data architect, I helped establish the file naming conventions used across the project and assisted with user interviews conducted during the first half of the quarter."
+                        ]
+                    },
+                    {
+                        "title": "Weeks 1–5: front-end and user testing",
+                        "content": [
+                            "The first half of the quarter focused on front-end implementation and user testing. Working from the design hand-off, the team translated the existing visual designs into HTML and CSS, validating usability assumptions through structured user testing sessions. My contribution here was in user interviews — helping gather qualitative data that informed which edge cases and failure states needed to be accounted for in the later logic phase."
+                        ]
+                    },
+                    {
+                        "title": "Weeks 6–10: logic layer and integration",
+                        "content": [
+                            "In the second half, I shifted focus to building the application logic. I began with a minimal-CSS logic flow — a stripped-back version of the app focused purely on routing, state, and data handling in PHP — before integrating that logic into the styled front-end. This sequence was intentional: validating the logic in isolation made it significantly easier to identify and fix breakage before introducing front-end complexity."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Solution",
+                "content": [
+                    "The delivered app is a mobile-first ordering flow built in PHP, HTML, CSS, and vanilla JavaScript. It covers a single critical path: a customer browses the menu, customizes their order, and submits it — without any step in that flow being breakable through misuse.",
+                    {
+                        "title": "Key design and development decisions",
+                        "list": "unordered",
+                        "content": [
+                            "Single critical path: Rather than attempting a full-featured ordering system, the scope was intentionally limited to one complete, well-hardened flow. This kept the product focused and testable.",
+                            "PHP for logic: Server-side logic in PHP handled order state and form validation, preventing client-side manipulation from breaking the flow.",
+                            "Vanilla JS for microinteractions: JavaScript was used sparingly and purposefully — only for UI feedback moments like button states and transitions, keeping the app lightweight and dependency-free.",
+                            "Inherited design integration: The front-end faithfully implemented the existing visual system from the prior term's designs, requiring close attention to component structure and CSS fidelity."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Results",
+                "content": [
+                    {
+                        "title": "Was it a success?",
+                        "content": [
+                            "Yes. The project met its defined success criteria: the app delivered a fully functional ordering flow that remained stable under reckless user input. No quantitative user testing was conducted on the final build, but the functional outcome — a product that doesn't break — was the primary benchmark, and it was met."
+                        ]
+                    },
+                    {
+                        "title": "Lessons learned",
+                        "list": "unordered",
+                        "content": [
+                            "Logic before styling pays off. Building a stripped-down PHP logic flow before integrating the front-end proved to be the right call. It surfaced edge cases early, when they were cheap to fix, and made the final integration significantly smoother.",
+                            "Inheriting designs has hidden costs. Working from another team's design system required extra time to fully understand intent and structure — time that isn't always visible in a project plan. Earlier alignment on component naming and structure would have saved effort during integration.",
+                            "Scope restraint is a feature. Committing to a single critical path rather than an ambitious feature set allowed the team to deliver something genuinely reliable, which is more valuable than a broader but fragile product."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "idm232",
+        "title": "Wooden Ladle Recipes",
+        "subtitle": "A PHP-based web app communicating with a MySQL database",
+        "content": [
+            {
+                "title": "Overview",
+                "content": [
+                    "This project involved building a dynamic recipe gallery site powered by PHP and a MySQL database, completed over a 10-week period. Working from a shared dataset, I focused on creating a mobile-first structure that kept each feature—home, recipe view, search, filter, and results—separate and cognitively simple. The backend relied heavily on prepared statements, parameter binding, and reusable PHP components, ensuring stability, efficient routing, and clean code organization. A significant amount of effort went into data preparation and media optimization, including restructuring the recipe dataset and converting all images into AVIF for faster loading.",
+                    "The final site is fully hosted on the school server and delivers a clear, streamlined experience that emphasizes usability over stylistic excess. User feedback and testing confirmed its reliability, and the project met its original goals by keeping the interface simple, predictable, and technically sound. The process also underscored the importance of choosing the right side—client or server—for each interaction, informing how I would refine the filter feature in future updates."
+                ]
+            },
+            {
+                "title": "Context & Challenge",
+                "content": [
+                    "Over the course of ten weeks, I developed a recipe gallery website using PHP and a MySQL database. This was a solo project, but I was provided with predefined content and a data structure, allowing me to concentrate primarily on the technical implementation. The main requirement was to store and serve all recipe data from a database for more efficient management and retrieval, while using PHP to dynamically generate the site’s pages. Because PHP’s declarative structure blends closely with HTML, the project became a natural extension of my existing front-end knowledge into foundational back-end development.",
+                    "The design problem centered on how to present complex recipe content without overwhelming users. During early discussions with classmates—who were working from the same dataset—I found most gravitated toward highly stylized layouts. I deliberately took a different direction. As someone who dislikes elaborate cooking procedures myself, I wanted the interface to avoid competing with the content, instead prioritizing clarity and minimalism. Reducing unnecessary visual elements became a key design principle, ensuring that the recipes remained the focal point.",
+                    "Success for this project meant constructing an interaction flow that remained stable under all conditions and a design that preserved simplicity at every stage. The goal was an experience where users could navigate recipes quickly and reliably, without distractions or structural failures, supported by a clean PHP–MySQL backbone."
+                ]
+            },
+            {
+                "title": "Process & Insight",
+                "content": [
+                    "Because this project centered more on backend implementation than on visual design, the process began with defining a clear site structure rather than extensive UI exploration. I documented the full layout in a markdown file and created quick sketches to validate the flow. The only part that received more detailed design attention was the header and card layout, which I refined in Figma to finalize typography choices and ensure the interface remained straightforward.",
+                    "Preparing the dataset became one of the most involved stages. I quickly discovered that Excel struggled with long text strings, so I rebuilt the entire dataset in JSON to regain control over formatting. After several rounds of regex-based cleanup and restructuring, I converted the final version into CSV and imported it through phpMyAdmin to generate the necessary SQL tables. In parallel, I reorganized all media assets—renaming, removing duplicates, and standardizing file conventions. Using ImageMagick via command line, I batch-converted every image into AVIF format, enabling faster loading and more efficient delivery once hosted.",
+                    "On the backend, I used PHP extensively—not just because it was required, but because its flexibility made it an intuitive way to assemble the entire site. I relied on prepared mysqli statements to establish secure database connections at the top of each page and used HTTP GET parameters to pass context between routes, making the overall flow predictable and lightweight. PHP’s include function played a major role as well, allowing shared components and logic to be reused across multiple pages without duplication.",
+                    "Testing introduced its own challenges. Running PHP locally through MAMP occasionally created unexpected inconsistencies, and unlike static HTML/CSS/JS deployments, managing a PHP site on the required school server meant manually updating files without automated version control. This created moments where the server version drifted from my GitHub commits, forcing me to track updates carefully and re-establish a consistent deployment environment. While complicated, the experience became an important lesson in handling server-side development workflows in practice."
+                ]
+            },
+            {
+                "title": "Solution",
+                "content": [
+                    "The final website is structured around a mobile-first architecture, prioritizing clarity and cognitive simplicity. Because smaller screens demand more focused navigation, I separated each major function into its own dedicated route: home, single recipe, search, filter, and results all operate as independent pages. This approach keeps each task self-contained and reduces mental load, allowing users to engage with individual features without distraction. Despite having different purposes, the pages share a unified layout and consistent components, which also streamlined much of the PHP logic behind them.",
+                    "All dynamic content on the site is generated through PHP, using a set of reusable scripts that loop through database queries to construct each interface element. Recipes, search results, and filter outputs are all built this way, allowing the site to respond directly to database updates without requiring any manual HTML adjustments. The GET method is used extensively to pass parameters between pages, enabling lightweight routing and predictable transitions throughout the experience.",
+                    "One of the most important technical decisions was using PHP’s prepared statements with parameter binding. This eliminated entire categories of destructive errors and greatly reduced the risk of accidentally breaking queries or introducing unsafe inputs—problems that can feel almost like self-inflicted XSS attacks. Shared components were handled through PHP’s include function, which kept the codebase clean and prevented repetition across routes. Combined with the earlier image optimization workflow, the final site is both structurally simple and computationally efficient.",
+                    "The completed project is fully deployed and hosted on the school server, where the dynamic backend and database-driven pages can be viewed in a live environment."
+                ]
+            },
+            {
+                "title": "Results",
+                "content": [
+                    "The project proved successful on both technical and experiential levels. Multiple people tested the live site on the school server, and no visible errors or structural failures were reported. One of the most meaningful pieces of feedback came from a family member who remarked that the interface felt “almost too simple”—a comment that affirmed the core design goal of minimizing cognitive load and ensuring the recipes themselves remained the primary focus. The site also performed efficiently thanks to optimized AVIF images and the database-driven backend, which kept loading speeds fast and consistent.",
+                    "Reflecting on the project, the main area I would approach differently is the filter functionality. In its current form, it triggers a full page reload through the server, even though the underlying logic could have been handled more smoothly on the client side using a simple combination of CSS and JavaScript. Reworking this feature would create an even lighter interaction flow and reduce unnecessary server calls. This insight has become a motivating factor for future refinement of the project."
+                ]
+            }
+        ]
+    },
+    {
+        "id": "idm241",
+        "title": "Microinteraction Studies",
+        "subtitle": "Flying Blue Website Modal Redesign",
+        "content": [
+            {
+                "title": "Overview",
+                "content": [
+                    "This project presents a full redesign of Flying Blue’s discounted-ticket display modal, completed over a 10-week term using only vanilla HTML, CSS, and JavaScript. The original interface relied on multiple redundant cards and abrupt microinteractions, creating visual clutter and transitions that felt harsh for users. My goal was to simplify the structure, improve clarity, and establish smoother, more accessible interaction patterns.",
+                    "The final solution consolidates all cards into a single calendar-style modal with a primary display panel and twelve fixed thumbnails. Unified 250ms fade transitions, refined visual hierarchy, and a modular content-injection system create a cleaner and more predictable user experience. Through iterative prototyping and thorough front-end reconstruction, the project delivered a calmer, more cohesive interaction model that aligns with Flying Blue’s branding while improving usability. The work also reinforced the importance of planning time for code cleanup and maintaining a clear, maintainable logic structure throughout development."
+                ]
+            },
+            {
+                "title": "Context & Challenge",
+                "content": [
+                    "Over a 10-week term, I completed a solo redesign of the discounted-ticket display modal for Flying Blue, the Air France–KLM rewards program. The assignment required rebuilding the interaction using only vanilla HTML, CSS, and JavaScript, which imposed a useful constraint: every part of the experience had to be authored from scratch, without relying on frameworks or prebuilt transitions.",
+                    "The project addressed a recurring usability issue on the existing interface: the original design relied on multiple nearly identical cards with abrupt microinteractions, resulting in a fragmented layout and visually harsh transitions. These split the user’s attention, occupied unnecessary space, and created uncomfortable flashes for users sensitive to sudden motion or blinking. Motivated both by my interest in aviation and by the clear opportunity for simplification, I focused on redesigning the modal in a way that prioritized clarity over stylistic novelty.",
+                    "The primary goal was to consolidate all those individual cards into a single, unified modal capable of presenting the same information more efficiently. Success would mean a more compact interaction surface and a smoother, more predictable transition flow that supports calmer, more accessible user experiences."
+                ]
+            },
+            {
+                "title": "Process & Insight",
+                "content": [
+                    "The project centered on iterative prototyping, moving through three major versions: an alpha, beta, and final build. Each began as a Figma prototype before being fully reconstructed in hand-written HTML, CSS, and JavaScript. The alpha version focused on faithfully recreating Flying Blue’s original modal, allowing me to analyze its structure and identify core issues—particularly the abrupt, non-existent transitions and a hover state that relied solely on heavy, underlined text. These choices made the two-line card contents feel cramped and diminished the clarity of an otherwise strong typeface like Open Sans.",
+                    "The beta version evolved into a complete visual redesign. It offered a far more appealing and expressive interaction model, but its complexity came at the cost of poor responsiveness. This informed the direction for the final version, which intentionally scaled back its visual density. I adopted a calmer, more utilitarian aesthetic that ensured consistent behavior across screen sizes and opportunities to remove several functions that were visually interesting but ultimately unnecessary.",
+                    "On the development side, I built a supporting information panel and a custom text-injecting script, which let me keep explanations separate from the HTML structure. This allowed the core modal to remain clean and focused. To preserve brand continuity, I adhered closely to Flying Blue’s established color system and emphasized Open Sans’s range of weights and sizes more effectively than the original design. Microinteractions were divided into two categories: hover states, handled entirely through CSS for immediate responsiveness, and all other interactive behaviors, which were implemented with custom JavaScript. This separation kept the code modular and easier to fine-tune.",
+                    "The project was tested on both my personal machine and school computers to ensure consistent rendering and performance across environments. These checks confirmed that the final iteration provided stable behavior, smoother transitions, and improved visual clarity compared to the original interface."
+                ]
+            },
+            {
+                "title": "Solution",
+                "content": [
+                    "The final design consolidates all of the original cards into a single modal built around a calendar-like structure. A primary display panel presents detailed information, while twelve fixed thumbnails—arranged in a clean 4×3 grid—function as selectors. Each thumbnail corresponds directly to one of the original cards, allowing users to browse options without the clutter of multiple independent elements. This architecture preserves the breadth of available information while dramatically reducing visual fragmentation.",
+                    "Interaction within the modal is driven by a consistent 250ms fade transition, applied across both thumbnail switching and content updates. This timing choice creates a calm, predictable rhythm that avoids the abrupt flashes of the original design and makes the experience more accessible for users sensitive to sudden motion. Visual hierarchy is established through a deliberate mix of iconography, varied font weights, and color cues, enabling users to immediately distinguish key data from secondary details.",
+                    "From a development standpoint, the layout relies on a standardized, reusable system for content injection. Because all thumbnails share an identical structure, I implemented a series of JavaScript functions—similar to the approach used in the supplementary information panel—to manage content shifts cleanly and efficiently. This kept the codebase modular, minimized repetition, and ensured that each state change felt cohesive within the broader interaction model.",
+                    "The final interactive modal is live and housed on the same site as the case study, allowing viewers to explore the redesign directly alongside its documentation."
+                ]
+            },
+            {
+                "title": "Results",
+                "content": [
+                    "The project ultimately met all of the criteria established at the outset: consolidating multiple cards into a single modal, introducing a clearer visual hierarchy, and replacing abrupt microinteractions with smooth, consistent transitions. The final experience is simpler, calmer, and more coherent, successfully addressing the core usability issues identified in the original interface.",
+                    "Although there were no quantitative metrics for this assignment, the qualitative improvements were significant. The redesigned layout reduced visual noise, made key information more immediately legible, and established a predictable interaction rhythm through standardized 250ms fade transitions. Feedback throughout the term—especially from my professor—helped refine both the clarity of my design reasoning and my approach to resolving structural issues in the code.",
+                    "A major takeaway from the project was the importance of allocating time for systematic code cleanup. As the design evolved, ad-hoc patches accumulated quickly, and I learned how easily a project’s logic can become tangled without deliberate refactoring. This insight will shape how I plan and pace future development work, ensuring cleaner, more maintainable systems from the start."
+                ]
+            }
+        ]
+    },
+    {
+        "id": "idmt380-24335",
+        "title": "Accessible Web Redesign",
+        "subtitle": "Project Gutenberg Reader",
+        "content": [
+            {
+                "title": "Overview",
+                "content": [
+                    "This project is a solo redesign of the Project Gutenberg reading experience — a three-page static website covering a chapter menu for Alice's Adventures in Wonderland, a reader page for Chapter 1, and a contact form. Built entirely in vanilla HTML over a 10-week academic term, it was designed from the ground up around one constraint: accessibility. The site passes WCAG color contrast standards, is fully navigable by keyboard alone, and works correctly with macOS VoiceOver. The defining lesson was that accessible design is not about adding more — it is about making sure what is already there works for everyone."
+                ]
+            },
+            {
+                "title": "The Context and Challenge",
+                "content": [
+                    {
+                        "title": "Background",
+                        "content": [
+                            "The Project Gutenberg Reader Redesign was completed as a solo class assignment over a 10-week term. It required building a three-page static site using only vanilla HTML — no frameworks, no libraries. The three pages were a chapter menu for Alice's Adventures in Wonderland, a reader page for Chapter 1, and a contact form."
+                        ]
+                    },
+                    {
+                        "title": "The Problem",
+                        "content": [
+                            "The existing Project Gutenberg reading interface presents meaningful barriers to users with disabilities. For people who rely on keyboard navigation, screen readers, or who have cognitive impairments, the experience is either difficult or entirely inaccessible. This project set out to rebuild it with accessibility as the primary design constraint — not an afterthought.",
+                            "Two problems were addressed in parallel: general web accessibility through correct HTML structure and assistive attributes, and cognitive accessibility through simplified layouts and reduced friction for users with mental or cognitive challenges."
+                        ]
+                    },
+                    {
+                        "title": "Goals and Objectives",
+                        "content": [
+                            "Success was defined by three concrete, testable criteria. First, all text and UI elements pass WCAG color contrast ratio standards. Second, the entire site is operable using only Tab and Shift+Tab with no mouse required. Third, the site functions correctly with assistive technologies, including macOS VoiceOver."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "The Process and Insight",
+                "content": [
+                    {
+                        "title": "Step 1: Learning to Analyze Accessibility",
+                        "content": [
+                            "The process started with an auditing exercise before any design work began. The New Jersey Transit website was used as a real-world case study for analyzing color palettes against contrast requirements. This built the foundational skill of evaluating accessibility from an existing interface rather than designing in a vacuum."
+                        ]
+                    },
+                    {
+                        "title": "Step 2: Initial Prototype",
+                        "content": [
+                            "With a working understanding of accessibility constraints, the first prototype established the HTML scaffolding for all three pages. The focus here was structural — getting a navigable, functional skeleton in place before layering in accessibility work."
+                        ]
+                    },
+                    {
+                        "title": "Step 3: Semantic and ARIA Refinement",
+                        "content": [
+                            "The prototype was then rebuilt with proper semantic HTML, replacing generic div and span elements with meaningful tags like nav, main, article, section, header, and footer. ARIA attributes were added throughout — aria-label, aria-describedby, role, and others — to provide context for screen readers. Logical tab order and visible focus states were verified at every step."
+                        ]
+                    },
+                    {
+                        "title": "Step 4: Accessible Form Design",
+                        "content": [
+                            "The contact form page was treated as a dedicated accessibility exercise. Forms are a common failure point, with mislabeled inputs, absent error states, and broken focus management being widespread issues. The form was built with properly associated labels, clear field descriptions, and full keyboard-accessible submission."
+                        ]
+                    },
+                    {
+                        "title": "Step 5: Integration and Simplification",
+                        "content": [
+                            "The final stage brought the three pages together into a unified site. During development, a significant number of additional features and interactive elements were explored — and almost all of them were cut. Features added in the name of accessibility were creating additional work for users, not reducing it. The right approach is to annotate the interface for those who need it, without making the experience heavier for everyone because of the extra design."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "The Solution",
+                "content": [
+                    "The finished product is a live, three-page static site built entirely in vanilla HTML. It meets all three original accessibility objectives: color contrast passes WCAG standards throughout, keyboard navigation works completely via Tab and Shift+Tab with no mouse required, and screen reader support is fully implemented via semantic markup and ARIA attributes, verified with macOS VoiceOver.",
+                    "The navigation structure is flat and predictable. The reader page presents Chapter 1 of Alice's Adventures in Wonderland with no distracting UI surrounding the text. The contact form is direct, with clearly labeled fields and no unnecessary steps. Every element on every page exists because it serves the user."
+                ]
+            },
+            {
+                "title": "The Results",
+                "content": [
+                    "The project met its stated objectives. The site navigates correctly with a keyboard, passes color contrast checks, and functions as intended with macOS VoiceOver. There is no quantitative user testing data — the project was evaluated through direct accessibility testing rather than user research metrics.",
+                    "The most important lesson was a reframe of what accessible design actually means. The instinct during development was to add — more structure, more cues, more features. But the correct approach was the opposite: to add notation for those who need it, without creating extra work for users because of the design itself. Accessibility is not about doing more. It is about making sure that what is already there works for everyone."
+                ]
+            }
+        ]
+    }
+]
